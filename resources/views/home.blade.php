@@ -17,9 +17,12 @@
                 <li class="fst-italic">
                     {{$comic->type}}
                 </li>
-                {{-- Prezzo --}}
                 <li>
-                    Prezzo: {{$comic->price}}
+                    <button>
+                        <a href="{{route('recuperoFumetto', $comic->id)}}">
+                            Scopri dettagli fumetti
+                        </a>
+                    </button>
                 </li>
             </ul>
             @endforeach

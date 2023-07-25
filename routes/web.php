@@ -17,3 +17,6 @@ use App\Http\Controllers\Guest\PageController as PageController;
 
 //ROTTE CON CONTROLLER
 Route::get('/', [PageController::class,'index']);
+
+Route::get('/products/{comic}',[PageController::class,'recuperoFumetto'])->name('recuperoFumetto');
+
