@@ -12,7 +12,8 @@ class PageController extends Controller
         //utilizzo funzione all() pe recuerarmi tutti i fumetti dal Model
         $comics = Comic::all();
 
-        dd($comics);
+        //dd($comics);
+        
         return view('home', compact('comics'));
     }
 
