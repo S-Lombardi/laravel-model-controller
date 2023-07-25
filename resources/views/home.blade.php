@@ -3,16 +3,17 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12">
                 @foreach($comics as $comic)
-                <div class="card">
+                <div class="card col-12 col-md-6 col-lg-4">
                     
-                    <h3> {{$comic->title }}</h3>
+                    <h4> {{$comic->title}}</h4>
+
+                    <img src="{{$comic->thumb}}" alt="">
 
                 </div>
-                @endforeach()
+                @endforeach
 
-            </div>
+            
             
         </div>
     </div>
