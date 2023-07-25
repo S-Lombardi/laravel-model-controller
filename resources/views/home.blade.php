@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-        Lavarel model controller
+            Lavarel model controller
+        </div>
     </div>
-</div>
 @endsection
 
 
