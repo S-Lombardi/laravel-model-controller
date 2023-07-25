@@ -9,7 +9,7 @@ use App\Models\Comic;
 class PageController extends Controller
 {
     public function index() {
-        //utilizzo funzione all() pe recuerarmi tutti i fumetti dal Model
+        //utilizzo funzione all() per recuperare tutti i fumetti dal Model
         $comics = Comic::all();
 
         //dd($comics);
