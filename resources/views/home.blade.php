@@ -13,14 +13,11 @@
                 <li>
                     <h5 class="mt-3 text-uppercase">{{$comic->title}}</h5>
                 </li>
-                {{-- Tipo --}}
-                <li class="fst-italic">
-                    {{$comic->type}}
-                </li>
+                {{-- Pulsante per passare alle infio del fumetto --}}
                 <li>
-                    <button>
-                        <a href="{{route('recuperoFumetto', $comic->id)}}">
-                            Scopri dettagli fumetti
+                    <button type="button" class="btn btn-outline-warning">
+                        <a class="button-home" href="{{route('recuperoFumetto', $comic->id)}}">
+                            Scopri dettagli fumetto!
                         </a>
                     </button>
                 </li>
